@@ -16,7 +16,7 @@ hide_menu_style = """
         #MainMenu {visibility: hidden;}
         footer {visibility:visible;}
         footer:after{
-            content:'V.1.24 Copyrigth @ 2023 Telespazio Argentina S.A.';
+            content:'V.1.25 Copyrigth @ 2023 Telespazio Argentina S.A.';
             display: block;
             position: relative;
             color: tomato;
@@ -156,4 +156,4 @@ if pivot!=1:
 
      st.subheader("En caso de dudas favor revisar el siguiente video tutorial en el apartado 16. Registros y Bonos de la wiki")
 
-     st.subheader("Para soporte técnico favor escribir a daniela.rivera@telespazio.pe")
+     st.subheader("Para soporte técnico favor escribir a angireth.jimenez@tpzcr.com")
