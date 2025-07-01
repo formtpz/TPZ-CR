@@ -44,7 +44,7 @@ def Bonos(usuario,puesto):
   nombre_9= pd.read_sql(f"select nombre from usuarios where usuario='{usuario}'",uri)
   nombre_9 = nombre_9.loc[0,'nombre']
 
-  if nombre_9=="Basilio Antonio Salazar Nunez" or nombre_9=="Kevin Orlando Garcia Cardenas":
+  if nombre_9=="Basilio Antonio Salazar Nunez" or nombre_9=="Kevin Orlando Garcia Cardenas" or nombre_9=="Ezequiel Ocaranza":
 
     placeholder8_9 = st.empty()
     archivos = placeholder8_9.subheader("Archivos")
