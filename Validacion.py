@@ -231,6 +231,9 @@ def Validacion(usuario,puesto):
     supervisor_15= pd.read_sql(f"select supervisor from usuarios where usuario ='{usuario}'",uri)
     supervisor_15 = supervisor_15.loc[0,'supervisor']
 
+    #-----horas bi, falta agregar al final 
+    horas_bi = float(horas_15)
+
     cursor01.execute(f"INSERT INTO registro (marca,usuario,nombre,horario,puesto,supervisor,proceso,fecha,bloque,estado,tipo,predios,horas)VALUES('{marca_15}','{usuario}','{nombre_15}','{horario_15}','{puesto}','{supervisor_15}','Validación','{fecha_15}','{bloque_15}','{estado_15}','{tipo_15}','{predios_15}','{horas_15}')")
     con.commit()                                                                                                                                 
     st.success('Reporte enviado correctamente')
