@@ -372,6 +372,6 @@ def Capacitacion(usuario,puesto):
           #-----horas bi, falta agregar al final 
           horas_bi = float(horas_8)
           
-          cursor01.execute(f"INSERT INTO capacitaciones (marca,usuario,nombre,puesto,supervisor,fecha,tema,horas,reporte)VALUES('{marca_8}','{usuario_8}','{nombre}','{puesto_8}','{supervisor_8}','{fecha_8}','{tema_8}','{horas_8}','{nombre_8}')")
+          cursor01.execute(f"INSERT INTO capacitaciones (marca,usuario,nombre,puesto,supervisor,fecha,tema,horas,reporte,horas_bi)VALUES('{marca_8}','{usuario_8}','{nombre}','{puesto_8}','{supervisor_8}','{fecha_8}','{tema_8}','{horas_8}','{nombre_8}','{horas_bi}')")
           con.commit()                                                                                               
         st.success('Registro enviado correctamente')
