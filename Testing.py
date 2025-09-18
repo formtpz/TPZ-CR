@@ -234,6 +234,6 @@ def Testing(usuario,puesto):
     #-----horas bi, falta agregar al final 
     horas_bi = float(horas_16)
 
-    cursor01.execute(f"INSERT INTO registro (marca,usuario,nombre,horario,puesto,supervisor,proceso,fecha,bloque,estado,tipo,predios,horas)VALUES('{marca_16}','{usuario}','{nombre_16}','{horario_16}','{puesto}','{supervisor_16}','Testing','{fecha_16}','{bloque_16}','{estado_16}','{tipo_16}','{predios_16}','{horas_16}')")
+    cursor01.execute(f"INSERT INTO registro (marca,usuario,nombre,horario,puesto,supervisor,proceso,fecha,bloque,estado,tipo,predios,horas,horas_bi)VALUES('{marca_16}','{usuario}','{nombre_16}','{horario_16}','{puesto}','{supervisor_16}','Testing','{fecha_16}','{bloque_16}','{estado_16}','{tipo_16}','{predios_16}','{horas_16}','{horas_bi}')")
     con.commit()
     st.success('Reporte enviado correctamente')
