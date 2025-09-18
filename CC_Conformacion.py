@@ -225,7 +225,7 @@ def CC_Conformacion(usuario,puesto):
     #-----horas bi, falta agregar al final 
     horas_bi = float(horas_11)
 
-    cursor01.execute(f"INSERT INTO registro (marca,usuario,nombre,horario,puesto,supervisor,proceso,fecha,bloque,estado,tipo,predios,horas)VALUES('{marca_11}','{usuario}','{nombre_11}','{horario_11}','{puesto}','{supervisor_11}','Control de Calidad Conformación','{fecha_11}','{bloque_11}','{estado_11}','No Aplica','{predios_11}','{horas_11}')")
+    cursor01.execute(f"INSERT INTO registro (marca,usuario,nombre,horario,puesto,supervisor,proceso,fecha,bloque,estado,tipo,predios,horas,horas_bi)VALUES('{marca_11}','{usuario}','{nombre_11}','{horario_11}','{puesto}','{supervisor_11}','Control de Calidad Conformación','{fecha_11}','{bloque_11}','{estado_11}','No Aplica','{predios_11}','{horas_11}','{horas_bi})")
 
     con.commit()
     st.success('Reporte enviado correctamente')
