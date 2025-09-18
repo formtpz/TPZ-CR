@@ -224,6 +224,6 @@ def CC_IFI(usuario,puesto):
 #-----horas bi, falta agregar al final 
     horas_bi = float(horas_12)
     
-    cursor01.execute(f"INSERT INTO registro (marca,usuario,nombre,horario,puesto,supervisor,proceso,fecha,bloque,estado,tipo,predios,horas)VALUES('{marca_12}','{usuario}','{nombre_12}','{horario_12}','{puesto}','{supervisor_12}','Control de Calidad IF I','{fecha_12}','{bloque_12}','{estado_12}','No Aplica','{predios_12}','{horas_12}')")
+    cursor01.execute(f"INSERT INTO registro (marca,usuario,nombre,horario,puesto,supervisor,proceso,fecha,bloque,estado,tipo,predios,horas,horas_bi)VALUES('{marca_12}','{usuario}','{nombre_12}','{horario_12}','{puesto}','{supervisor_12}','Control de Calidad IF I','{fecha_12}','{bloque_12}','{estado_12}','No Aplica','{predios_12}','{horas_12}','{horas_bi}')")
     con.commit()
     st.success('Reporte enviado correctamente')
