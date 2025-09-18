@@ -231,6 +231,9 @@ def Ubicacion(usuario,puesto):
     supervisor_17= pd.read_sql(f"select supervisor from usuarios where usuario ='{usuario}'",uri)
     supervisor_17 = supervisor_17.loc[0,'supervisor']
 
+    #-----horas bi, falta agregar al final 
+    horas_bi = float(horas_17)
+
     cursor01.execute(f"INSERT INTO registro (marca,usuario,nombre,horario,puesto,supervisor,proceso,fecha,bloque,estado,tipo,predios,horas)VALUES('{marca_17}','{usuario}','{nombre_17}','{horario_17}','{puesto}','{supervisor_17}','Ubicación','{fecha_17}','{bloque_17}','{estado_17}','{tipo_17}','{planos_17}','{horas_17}')")
     con.commit()
     st.success('Reporte enviado correctamente')
