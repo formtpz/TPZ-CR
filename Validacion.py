@@ -234,6 +234,6 @@ def Validacion(usuario,puesto):
     #-----horas bi, falta agregar al final 
     horas_bi = float(horas_15)
 
-    cursor01.execute(f"INSERT INTO registro (marca,usuario,nombre,horario,puesto,supervisor,proceso,fecha,bloque,estado,tipo,predios,horas)VALUES('{marca_15}','{usuario}','{nombre_15}','{horario_15}','{puesto}','{supervisor_15}','Validación','{fecha_15}','{bloque_15}','{estado_15}','{tipo_15}','{predios_15}','{horas_15}')")
+    cursor01.execute(f"INSERT INTO registro (marca,usuario,nombre,horario,puesto,supervisor,proceso,fecha,bloque,estado,tipo,predios,horas,horas_bi)VALUES('{marca_15}','{usuario}','{nombre_15}','{horario_15}','{puesto}','{supervisor_15}','Validación','{fecha_15}','{bloque_15}','{estado_15}','{tipo_15}','{predios_15}','{horas_15}','{horas_bi}')")
     con.commit()                                                                                                                                 
     st.success('Reporte enviado correctamente')
