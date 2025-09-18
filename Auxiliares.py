@@ -227,6 +227,8 @@ def Auxiliares(usuario,puesto):
     supervisor_14= pd.read_sql(f"select supervisor from usuarios where usuario ='{usuario}'",uri)
     supervisor_14 = supervisor_14.loc[0,'supervisor']
 
+    horas_bi = float(horas_14)
+
     cursor01.execute(f"INSERT INTO registro (marca,usuario,nombre,horario,puesto,supervisor,proceso,fecha,bloque,estado,tipo,predios,horas)VALUES('{marca_14}','{usuario}','{nombre_14}','{horario_14}','{puesto}','{supervisor_14}','{proceso_14}','{fecha_14}','{bloque_14}','Terminado','Ordinario','{predios_14}','{horas_14}')")
     con.commit()
     st.success('Reporte enviado correctamente')
