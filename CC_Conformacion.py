@@ -222,7 +222,10 @@ def CC_Conformacion(usuario,puesto):
     supervisor_11= pd.read_sql(f"select supervisor from usuarios where usuario ='{usuario}'",uri)
     supervisor_11 = supervisor_11.loc[0,'supervisor']
 
+    #-----horas bi, falta agregar al final 
+    horas_bi = float(horas_11)
+
     cursor01.execute(f"INSERT INTO registro (marca,usuario,nombre,horario,puesto,supervisor,proceso,fecha,bloque,estado,tipo,predios,horas)VALUES('{marca_11}','{usuario}','{nombre_11}','{horario_11}','{puesto}','{supervisor_11}','Control de Calidad Conformación','{fecha_11}','{bloque_11}','{estado_11}','No Aplica','{predios_11}','{horas_11}')")
-    
+
     con.commit()
     st.success('Reporte enviado correctamente')
