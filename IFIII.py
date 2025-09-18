@@ -234,6 +234,9 @@ def IFIII(usuario,puesto):
     supervisor_5= pd.read_sql(f"select supervisor from usuarios where usuario ='{usuario}'",uri)
     supervisor_5 = supervisor_5.loc[0,'supervisor']
 
+#-----horas bi, falta agregar al final 
+    horas_bi = float(horas_5)
+    
     cursor01.execute(f"INSERT INTO registro (marca,usuario,nombre,horario,puesto,supervisor,proceso,fecha,bloque,estado,tipo,predios,horas)VALUES('{marca_5}','{usuario}','{nombre_5}','{horario_5}','{puesto}','{supervisor_5}','Información Final III','{fecha_5}','{bloque_5}','{estado_5}','{tipo_5}','{predios_5}','{horas_5}')")
     con.commit()
     st.success('Reporte enviado correctamente')
