@@ -233,6 +233,6 @@ def IFII(usuario,puesto):
 #-----horas bi, falta agregar al final 
     horas_bi = float(horas_4)
     
-    cursor01.execute(f"INSERT INTO registro (marca,usuario,nombre,horario,puesto,supervisor,proceso,fecha,bloque,estado,tipo,predios,horas,horas_bi)VALUES('{marca_4}','{usuario}','{nombre_4}','{horario_4}','{puesto}','{supervisor_4}','Información Final II','{fecha_4}','{bloque_4}','{estado_4}','{tipo_4}','{predios_4}','{horas_4}',{horas_bi}')")
+    cursor01.execute(f"INSERT INTO registro (marca,usuario,nombre,horario,puesto,supervisor,proceso,fecha,bloque,estado,tipo,predios,horas,horas_bi)VALUES('{marca_4}','{usuario}','{nombre_4}','{horario_4}','{puesto}','{supervisor_4}','Información Final II','{fecha_4}','{bloque_4}','{estado_4}','{tipo_4}','{predios_4}','{horas_4}','{horas_bi}')")
     con.commit()
     st.success('Reporte enviado correctamente')
