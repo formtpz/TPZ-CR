@@ -123,10 +123,10 @@ def Bonos(usuario,puesto):
             
         placeholder16_9 = st.empty()
         col1, col2, col3, col4 = placeholder16_9.columns(4)
-        col1.metric("Bonos Variables",bonos_variables_9)
-        col2.metric("Bonos Fijos",bonos_fijos_9)
-        col3.metric("Otros Bonos",otros_bonos_9)
-        col4.metric("Total",bonos_total)
+        col1.metric("Bonos Variables",round(bonos_variables_9, 2))
+        col2.metric("Bonos Fijos",round(bonos_fijos_9, 2))
+        col3.metric("Otros Bonos",round(otros_bonos_9, 2))
+        col4.metric("Total",round(float(bonos_total), 2))
 
     else:
     
