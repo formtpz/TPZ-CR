@@ -337,7 +337,7 @@ def Bonos(usuario,puesto):
       placeholder26_9 = st.empty()
       col1, col2, col3, col4 = placeholder26_9.columns(4)
       col1.metric("Bonos Variables",round(bonos_variables_9, 2))
-      col2.metric("Bonos Fijos",roud(bonos_fijos_9, 2))
+      col2.metric("Bonos Fijos",round(bonos_fijos_9, 2))
       col3.metric("Otros Bonos",round(otros_bonos_9, 2))
       col4.metric("Total",round(bonos_9.iloc[0,102], 2))
 
