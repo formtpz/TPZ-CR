@@ -153,7 +153,7 @@ def Bonos(usuario,puesto):
         col1.metric("Bonos Variables",round(bonos_variables_9, 2))
         col2.metric("Bonos Fijos",round(bonos_fijos_9, 2))
         col3.metric("Otros Bonos",round(otros_bonos_9, 2))
-        col4.metric("Total",round(bonos_9.iloc[0,102], 2))
+        col4.metric("Total",round(float(bonos_9.iloc[0,102]), 2))
 
         # Procesos #
           
@@ -339,7 +339,7 @@ def Bonos(usuario,puesto):
       col1.metric("Bonos Variables",round(bonos_variables_9, 2))
       col2.metric("Bonos Fijos",round(bonos_fijos_9, 2))
       col3.metric("Otros Bonos",round(otros_bonos_9, 2))
-      col4.metric("Total",round(bonos_9.iloc[0,102], 2))
+      col4.metric("Total",round(float(bonos_9.iloc[0,102]), 2))
 
       # Procesos #
       
