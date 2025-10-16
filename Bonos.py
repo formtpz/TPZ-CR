@@ -292,15 +292,15 @@ def Bonos(usuario,puesto):
 
         otros_bonos_9= pd.DataFrame(data={"Variables":variables_9,"Valor":valor_9})
           
-        otros_bonos_9.iloc[0,1] = bonos_variables_9
+        otros_bonos_9.iloc[0,1] = round(float(bonos_variables_9), 2))
         otros_bonos_9.iloc[1,1] = bonos_fijos_9
-        otros_bonos_9.iloc[2,1] = round(bonos_9.iloc[0,95], 2)
-        otros_bonos_9.iloc[3,1] = round(bonos_9.iloc[0,96], 2)
-        otros_bonos_9.iloc[4,1] = round(bonos_9.iloc[0,97], 2)
-        otros_bonos_9.iloc[5,1] = round(bonos_9.iloc[0,98], 2)
-        otros_bonos_9.iloc[6,1] = round(bonos_9.iloc[0,99], 2)
-        otros_bonos_9.iloc[7,1] = round(bonos_9.iloc[0,101], 2)
-        otros_bonos_9.iloc[8,1] = round(bonos_9.iloc[0,102], 2)
+        otros_bonos_9.iloc[2,1] = round(float(bonos_9.iloc[0,95]), 2)
+        otros_bonos_9.iloc[3,1] = round(float(bonos_9.iloc[0,96]), 2)
+        otros_bonos_9.iloc[4,1] = round(float(bonos_9.iloc[0,97]), 2)
+        otros_bonos_9.iloc[5,1] = round(float(bonos_9.iloc[0,98]), 2)
+        otros_bonos_9.iloc[6,1] = round(float(bonos_9.iloc[0,99]), 2)
+        otros_bonos_9.iloc[7,1] = round(float(bonos_9.iloc[0,101]), 2)
+        otros_bonos_9.iloc[8,1] = round(float(bonos_9.iloc[0,102]), 2)
 
         placeholder21_9 = st.empty()
         dataframe_otros_bonos_9=placeholder21_9.dataframe(data=otros_bonos_9)
@@ -478,15 +478,15 @@ def Bonos(usuario,puesto):
 
       otros_bonos_9= pd.DataFrame(data={"Variables":variables_2_9,"Valor":valor_9})
       
-      otros_bonos_9.iloc[0,1] = bonos_variables_9
-      otros_bonos_9.iloc[1,1] = bonos_fijos_9
-      otros_bonos_9.iloc[2,1] = round(bonos_9.iloc[0,95], 2)
-      otros_bonos_9.iloc[3,1] = round(bonos_9.iloc[0,96], 2)
-      otros_bonos_9.iloc[4,1] = round(bonos_9.iloc[0,97], 2)
-      otros_bonos_9.iloc[5,1] = round(bonos_9.iloc[0,98], 2)
-      otros_bonos_9.iloc[6,1] = round(bonos_9.iloc[0,99], 2)
-      otros_bonos_9.iloc[7,1] = round(bonos_9.iloc[0,101], 2)
-      otros_bonos_9.iloc[8,1] = round(bonos_9.iloc[0,102], 2)
+      otros_bonos_9.iloc[0,1] = round(float(bonos_variables_9), 2)
+      otros_bonos_9.iloc[1,1] = round(float(bonos_fijos_9), 2)
+      otros_bonos_9.iloc[2,1] = round(float(bonos_9.iloc[0,95]), 2)
+      otros_bonos_9.iloc[3,1] = round(float(bonos_9.iloc[0,96]), 2)
+      otros_bonos_9.iloc[4,1] = round(float(bonos_9.iloc[0,97]), 2)
+      otros_bonos_9.iloc[5,1] = round(float(bonos_9.iloc[0,98]), 2)
+      otros_bonos_9.iloc[6,1] = round(float(bonos_9.iloc[0,99]), 2)
+      otros_bonos_9.iloc[7,1] = round(float(bonos_9.iloc[0,101]), 2)
+      otros_bonos_9.iloc[8,1] = round(float(bonos_9.iloc[0,102]), 2)
 
 
       placeholder29_9 = st.empty()
