@@ -292,8 +292,8 @@ def Bonos(usuario,puesto):
 
         otros_bonos_9= pd.DataFrame(data={"Variables":variables_9,"Valor":valor_9})
           
-        otros_bonos_9.iloc[0,1] = round(bonos_variables_9, 2)
-        otros_bonos_9.iloc[1,1] = round(bonos_fijos_9, 2)
+        otros_bonos_9.iloc[0,1] = bonos_variables_9
+        otros_bonos_9.iloc[1,1] = bonos_fijos_9
         otros_bonos_9.iloc[2,1] = round(bonos_9.iloc[0,95], 2)
         otros_bonos_9.iloc[3,1] = round(bonos_9.iloc[0,96], 2)
         otros_bonos_9.iloc[4,1] = round(bonos_9.iloc[0,97], 2)
@@ -478,8 +478,8 @@ def Bonos(usuario,puesto):
 
       otros_bonos_9= pd.DataFrame(data={"Variables":variables_2_9,"Valor":valor_9})
       
-      otros_bonos_9.iloc[0,1] = round(bonos_variables_9, 2)
-      otros_bonos_9.iloc[1,1] = round(bonos_fijos_9, 2)
+      otros_bonos_9.iloc[0,1] = bonos_variables_9
+      otros_bonos_9.iloc[1,1] = bonos_fijos_9
       otros_bonos_9.iloc[2,1] = round(bonos_9.iloc[0,95], 2)
       otros_bonos_9.iloc[3,1] = round(bonos_9.iloc[0,96], 2)
       otros_bonos_9.iloc[4,1] = round(bonos_9.iloc[0,97], 2)
